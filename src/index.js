@@ -18,7 +18,8 @@ app.set("view engine", ".hbs");
 
 
 //Routes
-app.use(require("./routes/login.routes.js"));
+app.use("/signUp",require("./routes/login.routes.js"));
+app.use("/contactanos", require("./routes/contactUs.routes.js"));
 
 //static files
 app.use(express.static(path.join(__dirname, "public")))
