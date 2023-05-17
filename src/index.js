@@ -17,9 +17,11 @@ app.engine(".hbs", engine({
 app.set("view engine", ".hbs");
 
 
-app.get("/", (req, res)=>{
-    res.render("index.hbs");
-});
+//Routes
+app.use(require("./routes/login.routes.js"));
+
+//static files
+app.use(express.static(path.join(__dirname, "public")))
 
 app.listen(PORT, ()=>{
     console.log(`Server on port ${PORT}`);
