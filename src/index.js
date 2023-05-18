@@ -20,6 +20,9 @@ app.set("view engine", ".hbs");
 //Routes
 app.use("/signUp",require("./routes/login.routes.js"));
 app.use("/contactanos", require("./routes/contactUs.routes.js"));
+app.use("/reservarCitas", require("./routes/appointments.routes.js"));
+app.use("/packs", require("./routes/packs.routes.js"));
+
 
 //static files
 app.use(express.static(path.join(__dirname, "public")))
