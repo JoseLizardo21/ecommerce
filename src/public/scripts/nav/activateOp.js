@@ -1,6 +1,7 @@
 export const pintarOp = ()=>{
     const url = window.location.pathname;
-    if (url.indexOf("/inicio") == 0) {
+    console.log(url)
+    if (url == "/") {
         const btnInicio = document.getElementById("btnInicio");
         btnInicio.style.color = "#42B8F3";
     }else if(url.indexOf("/reservarCitas") == 0){

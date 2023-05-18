@@ -23,7 +23,7 @@ app.use("/servicios", require("./routes/services.routes.js"));
 app.use("/contactanos", require("./routes/contactUs.routes.js"));
 app.use("/reservarCitas", require("./routes/appointments.routes.js"));
 app.use("/packs", require("./routes/packs.routes.js"));
-app.use("/inicio", require("./routes/home.routes.js"));
+app.use("/", require("./routes/home.routes.js"));
 app.use("/libroReclamaciones", require("./routes/complaintsBook.routes.js"));
 
 
