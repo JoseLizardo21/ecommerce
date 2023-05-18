@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.bodyrecla{
+    font-family: 'Eastman Roman Bold', sans-serif;
+}
+.custom-container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.custom-heading {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.custom-paragraph {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.left-section {
+    padding: 30px;
+    color: #fff;
+}
+
+.right-section {
+    padding: 30px;
+}
+.no-underline {
+    text-decoration: none;
+}
+.rounded-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
