@@ -2,6 +2,14 @@
     border-top: 1px solid black;
     margin: 2px 0;
 }
+.custom-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
 .footer{
     font-family: 'Eastman Roman Bold', sans-serif;
 }

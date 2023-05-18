@@ -1,0 +1,44 @@
+<div class="container-fluid" style="height:1000px;">
+    <div class="row" style="height:1000px;">
+        <div class="col-12 col-md-6 left-section d-flex flex-column bg-primary">
+            <h2 class="text-center mt-5 mb-5">Estamos aquí para ayudarte</h2>
+            <p class="text-center mb-0 pb-2 px-5">Ayúdanos a entender tu caso, completa los siguientes datos del libro de reclamaciones</p>
+        </div>
+        <div class="col-12 col-md-6 right-section">
+            <h2 class="text-center text-primary mt-5">Ingresa los datos de tu documento de identidad</h2>
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="dni">Documento:</label>
+                        <select class="form-control" id="dni">
+                            <option value="opcion1">DNI</option>
+                            <option value="opcion2">Carnet de Extranjeria</option>
+                            <option value="opcion3">Ruc</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label for="num_documento">Número de Documento:</label>
+                        <input type="text" class="form-control" id="num_documento">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-5">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="no_cliente">
+                    <label class="form-check-label" for="no_cliente">No soy cliente de Funny Nails & Hair</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="menor_edad">
+                    <label class="form-check-label" for="menor_edad">Soy menor de edad</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <button type="button" class="btn btn-light" onclick="window.location.href = 'http://localhost:3000/libroReclamaciones';">Volver</button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href = 'http://localhost:3000/libroReclamaciones/datosPersonales';">Siguiente</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer}}    

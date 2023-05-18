@@ -1,0 +1,46 @@
+<div class="container-fluid" style="height:1000px;">
+    <div class="row" style="height:1000px;">
+        <div class="col-12 col-md-6 left-section d-flex flex-column bg-primary">
+            <h2 class="text-center mt-5 mb-5">Estamos aquí para ayudarte</h2>
+            <p class="text-center mb-0 pb-2 px-5">Ayúdanos a entender tu caso, completa los siguientes datos del libro de reclamaciones</p>
+        </div>
+        <div class="col-12 col-md-6 right-section">
+                    <h2 class="text-center text-primary mt-5">Completa los detalles</h2>
+                    <form id="detalles">
+                        <div class="form-group">
+                            <label for="identificacion" class="mb-2 my-4"><strong>Identificación del bien contratado:</strong></label>
+                            <input type="text" class="form-control" id="identificacion" name="identificacion" placeholder="Ingresa la identificación del bien contratado" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha_incidencia" class="mb-2 my-3"><strong>Fecha de incidencia:</strong></label>
+                            <input type="date" class="form-control" id="fecha_incidencia" name="fecha_incidencia" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto_reclamo" class="mb-2 my-3"><strong>Asunto del reclamo:</strong></label>
+                            <input type="text" class="form-control" id="asunto_reclamo" name="asunto_reclamo" placeholder="Ingresa el asunto del reclamo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion" class="mb-2 my-3"><strong>Descripción:</strong></label>
+                            <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Ingresa la descripción del reclamo" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="monto_reclamado" class="mb-2 my-3"><strong>Monto reclamado en S/.:</strong></label>
+                            <input type="number" class="form-control" id="monto_reclamado" name="monto_reclamado" placeholder="Ingresa el monto reclamado" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pedido_solicitado" class="mb-2 my-3"><strong>Pedido solicitado:</strong></label>
+                            <input type="text" class="form-control" id="pedido_solicitado" name="pedido_solicitado" placeholder="Ingresa el pedido solicitado" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="adjuntar_archivo" class="mb-2 my-3"><strong>Adjuntar archivo (opcional):</strong></label><br>
+                            <input type="file" class="form-control-file" id="adjuntar_archivo" name="adjuntar_archivo">
+                        </div>
+                    </form>
+            <div class="d-flex justify-content-between mt-5">
+                <button type="button" class="btn btn-light" onclick="window.location.href = 'http://localhost:3000/libroReclamaciones/datosPersonales';">Volver</button>
+                <button type="button" class="btn btn-primary">Siguiente</button>
+            </div>
+            </div>
+        </div>
+    </div>
+{{> footer}}    
