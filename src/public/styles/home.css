@@ -61,3 +61,21 @@
     font-size: 25px;
     font-weight: 500;
 }
+
+
+
+@media(max-width: 1180px){
+    .ctnImgManicure{
+        height: 450px
+    }
+}
+@media(max-width: 1000px){
+    .ctnImgManicure{
+        height: 380px
+    }
+}
+@media(max-width: 767px){
+    #ctnImg2Manicure{
+        display: none;
+    }
+}
