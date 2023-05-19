@@ -44,3 +44,20 @@
     padding: 5px 40px;
     text-decoration: none;
 }
+
+.ctnAboutMeHome{
+    width: 400px;
+}
+.ctnAboutMeHome > p{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.ctnServicesHome{
+    margin-top: 30px;
+}
+
+.ctnServicesHome h2{
+    font-size: 25px;
+    font-weight: 500;
+}

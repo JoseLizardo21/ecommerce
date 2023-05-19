@@ -1,1 +1,52 @@
-se está implementando
+<div class="container-fluid px-5">
+    <div class="row mt-4">
+        <div class="col mt-5">
+            <div class="ctn-calendar">
+                <div class="calendar rounded mt-0">
+                    <div class="ms-3">
+                        Calendario
+                    </div>
+                    <div class="calendar__info d-flex flex-row justify-content-between px-3 border border-top-0 border-start-0 border-end-0">
+                        <div class="d-flex flex-row">
+                            <div class="calendar__month" id="month"></div>
+                            <div class="calendar__year ms-2" id="year"></div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <img src="/icons/keyboardArrowLeft.svg" class="keyboardArrow" id="prev-month"/>
+                            <img src="/icons/keyboardArrowRight.svg" id="next-month" class=" ms-4 keyboardArrow" />
+                        </div>
+                    </div>
+
+                    <div class="calendar__week">
+                        <div class="calendar__day calendar__item">LUN</div>
+                        <div class="calendar__day calendar__item">MAR</div>
+                        <div class="calendar__day calendar__item">MIER</div>
+                        <div class="calendar__day calendar__item">JUE</div>
+                        <div class="calendar__day calendar__item">VIER</div>
+                        <div class="calendar__day calendar__item">SAB</div>
+                        <div class="calendar__day calendar__item">DOM</div>
+                    </div>
+
+                    <div class="calendar__dates" id="dates"></div>
+                </div>
+            <div class="d-flex justify-content-center">
+                <a href="/reservarCita" class="btnReservarCi rounded">
+                    RESERVAR TU CITA
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col mt-5">
+            <div class="cardInfoAppoi">
+                <p>Deslumbra con tu uñas y cabello en Funny Nails & Hair mientras reservar tu cita
+                    y disfrutas de:
+                </p>
+                <p class="listInfo mt-4"><img src="/icons/CELULAR.svg" class="me-2"> Reservas en linea 24/7</p>
+                <p class="listInfo"><img src="/icons/NOTIFICACIONES.svg" class="me-2">Resivirás recordatorios automáticos</p>
+                <p class="listInfo"><img src="/icons/DOCUMENTO.svg" class="me-2">Podrás confirmar y cancelar citas de forma rápida y sencilla.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/scripts/citas.js"></script>
+{{> footer}}
