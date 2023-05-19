@@ -2,3 +2,45 @@
     position: absolute;
     bottom: 1px;
 }
+.ctnImgsPre{
+    position: relative;
+}
+.ctnImgManicure{
+    height: 550px;
+    filter: brightness(60%);
+}
+#ctnImg1Manicure{
+    background-image: url("/images/nailshome.png");
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+#ctnImg2Manicure{
+    background-image: url("/images/nailshome2.png");
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+.ctnPresen{
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ctnPresen > h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+.ctnPresen > div:nth-child(2){
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+}
+.ctnPresen > a {
+    background-color: #42B8F3;
+    color: white;
+    padding: 5px 40px;
+    text-decoration: none;
+}
