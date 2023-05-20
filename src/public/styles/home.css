@@ -114,9 +114,15 @@
     border-radius: 20px;
 }
 
-.cardDesPr{
-    width: 500px;
-    height: 500px;
+.ctnImDesP{
+    width: 600px;
+    height: 600px;
+}
+.ctnImDesS{
+    width: 250px;
+}
+.tamañoCardS{
+    width: 250px;
 }
 @media(max-width: 1180px){
     .ctnImgManicure{
