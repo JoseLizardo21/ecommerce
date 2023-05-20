@@ -46,7 +46,7 @@
 }
 
 .ctnAboutMeHome{
-    width: 400px;
+    width: 500px;
 }
 .ctnAboutMeHome > p{
     font-weight: 300;
@@ -58,10 +58,15 @@
 }
 
 .ctnServicesHome h2{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300;
 }
 
+
+.serName{
+    color: #656565;
+    font-weight: 100;
+}
 
 
 @media(max-width: 1180px){
@@ -77,5 +82,18 @@
 @media(max-width: 767px){
     #ctnImg2Manicure{
         display: none;
+    }
+    .ctnPresen > h1{
+        font-size: 20px;
+    }
+    .ctnPresen > div:nth-child(2){
+        font-size: 14px;
+    }
+    .ctnPresen{
+        font-size: 14px;
+    }
+    .ctnServicesHome{
+        margin-top: 60px;
+        font-size: 13px;
     }
 }
