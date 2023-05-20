@@ -69,6 +69,55 @@
 }
 
 
+.ctnSusBol{
+    border-top: solid 1px #EEEEEE;
+    border-bottom: solid 1px #EEEEEE;
+    margin: 100px 0;
+}
+
+
+.btnMoreServices{
+    text-decoration: none;
+    background-color: #42B8F3;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 35px;
+}
+
+.cardSusBol > div:nth-child(1){
+    font-size: 20px;
+    font-weight: 500;
+}
+.cardSusBol > div:nth-child(2){
+    font-size: 15px;
+    font-weight: 300;
+}
+.cardSusBol input{
+    border: 0;
+    border-radius: 10px;
+    padding: 3px 20px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #F5F5F5;
+}
+.cardSusBol  input:focus{
+    outline: none;
+}
+.btnEnvSus{
+    background-color: #42B8F3;
+    border: 0;
+    color: white;
+    font-weight: 600;
+    padding: 0 60px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.cardDesPr{
+    width: 500px;
+    height: 500px;
+}
 @media(max-width: 1180px){
     .ctnImgManicure{
         height: 450px
@@ -95,5 +144,16 @@
     .ctnServicesHome{
         margin-top: 60px;
         font-size: 13px;
+    }
+    .cardSusBol{
+        padding: 0 30px;
+    }
+    .cardSusBol > div:nth-child(1){
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .btnEnvSus{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
