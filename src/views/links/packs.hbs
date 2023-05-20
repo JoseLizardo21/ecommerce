@@ -1,2 +1,94 @@
-se está en packs
+<div class="container-fluid">
+    <div class="row justify-content-center" id="packs">
+        <div class="col-2">
+            <img src="/images/imgPrueba.png" alt="Pack Manos y Pies" class="rounded-circle img-fluid">
+            <h5>Pack Manos y Pies</h5>
+        </div>
+        <div class="col-2">
+            <img src="/images/imgPrueba.png" alt="Pack Cejas y Pestañas" class="rounded-circle img-fluid">
+            <h5>Pack Cejas y Pestañas</h5>
+        </div>
+    </div>
+    <hr class="text-muted">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-primary">Packs</h2>
+        </div>
+        <div class="col-auto">
+            <a href="/" class="text-primary"><i class="bi bi-arrow-return-left"></i></a>
+        </div>
+    </div>
+    <div class="row" id="filtros">
+        <div class="col">
+            <label for="disponibilidad">Filtrar por:</label>
+            <select id="disponibilidad">
+                <option disabled selected class="visually-hidden">disponibilidad</option>
+                <option value="todos">Todos</option>
+                <option value="disponible">Disponible</option>
+                <option value="agotado">Agotado</option>
+            </select>
+        </div>
+        <div class="col">
+            <select id="precio">
+                <option disabled selected class="visually-hidden">Precios</option>
+                <option value="todos">Todos</option>
+                <option value="bajo">Menor precio</option>
+                <option value="alto">Mayor precio</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="ordenar">Ordenar por:</label>
+            <select id="ordenar">
+                <option value="destacados">Destacados</option>
+                <option value="nombre">Nombre</option>
+                <option value="precio">Precio</option>
+            </select>
+        </div>
+        <div class="col">
+            <p class="text-muted">Mostrando X productos</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-3">
+            <div class="card">
+                <img src="/images/imgPrueba.png" class="card-img-top img-fluid  " alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Servicio prueba 1</h5>
+                    <p class="card-text">Precio: S/100.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="/images/imgPrueba.png" class="card-img-top img-fluid" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Servicio prueba 2</h5>
+                    <p class="card-text">Precio: S/100.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img src="/images/imgPrueba.png" class="card-img-top img-fluid" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Servicio prueba 3</h5>
+                    <p class="card-text">Precio: S/100.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
 {{> footer}}
+</div>
