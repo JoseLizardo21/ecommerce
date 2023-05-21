@@ -57,11 +57,6 @@
     margin-top: 30px;
 }
 
-.ctnServicesHome h2{
-    font-size: 30px;
-    font-weight: 300;
-}
-
 
 .serName{
     color: #656565;
@@ -124,9 +119,20 @@
 .tamañoCardS{
     width: 250px;
 }
+
 @media(max-width: 1180px){
     .ctnImgManicure{
         height: 450px
+    }
+    .ctnImDesP{
+        width: 590px;
+        height: 590px;
+    }
+    .ctnImDesS{
+        width: 240px;
+    }
+    .tamañoCardS{
+        width: 240px;
     }
 }
 @media(max-width: 1000px){
@@ -161,5 +167,27 @@
     .btnEnvSus{
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+.titleCate{
+    font-size: 28px;
+    font-weight: 400;
+}
+@media(max-width: 630px){
+    .ctnImDesP{
+        width: 500px;
+        height: 500px;
+    }
+}
+@media(max-width: 530px){
+    .ctnImDesP{
+        width: 300px;
+        height: 300px;
+    }
+    .ctnImDesS{
+        width: 150px;
+    }
+    .tamañoCardS{
+        width: 150px;
     }
 }
