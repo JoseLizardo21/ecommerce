@@ -1,7 +1,11 @@
 const express = require("express");
+const session = require("express-session");
 const {engine} = require("express-handlebars");
+const flash = require("connect-flash");
 const path = require("path");
 const {PORT} = require("./config");
+const morgan = require("morgan");
+const passport = require("passport")
 
 //initializatons
 const app = express();
@@ -16,9 +20,26 @@ app.engine(".hbs", engine({
 }))
 app.set("view engine", ".hbs");
 
+//midlewars
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json());
+//app.use(morgan('dev'))
+app.use(session({
+    secret: 'akaakka',
+    resave: false,
+    saveUninitialized: false,
+}))
+app.use(flash())
+app.use(passport.initialize());
+app.use(passport.session())
+//global varibles
+app.use((req, res, next)=>{
+    app.locals.message = req.flash("message");
+    next();
+}) 
 
 //Routes
-app.use("/signUp",require("./routes/login.routes.js"));
+app.use(require("./routes/authentication.routes.js"));
 app.use("/servicios", require("./routes/services.routes.js"));
 app.use("/contactanos", require("./routes/contactUs.routes.js"));
 app.use("/reservarCitas", require("./routes/appointments.routes.js"));
