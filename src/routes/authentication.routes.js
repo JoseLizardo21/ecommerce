@@ -15,6 +15,7 @@ router.post('/signup',isNotLogedIn, passport.authenticate('local.signup',{
 
 
 router.post('/signin', isNotLogedIn, (req, res, next)=>{
+    console.log(req.body)
     passport.authenticate('local.signin', {
         successRedirect: '/profile',
         failureRedirect: '/signin',
