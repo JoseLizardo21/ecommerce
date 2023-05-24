@@ -1,7 +1,7 @@
 <div class="container-fluid px-5">
-    <div class="row mt-4" style="height:1000px;">
-        <div class="col mt-5">
-            <div class="ctn-calendar">
+    <div class="row gx-0 mt-4" style="height:1000px;">
+        <div class="col container-fluid mt-5 flex-grow-1">
+            <div class="ctn-calendar w-100">
                 <div class="calendar rounded mt-0">
                     <div class="ms-3">
                         Calendario
@@ -16,17 +16,22 @@
                             <img src="/icons/keyboardArrowRight.svg" id="next-month" class=" ms-4 keyboardArrow" />
                         </div>
                     </div>
-
-                    <div class="calendar__week">
-                        <div class="calendar__day calendar__item">LUN</div>
-                        <div class="calendar__day calendar__item">MAR</div>
-                        <div class="calendar__day calendar__item">MIER</div>
-                        <div class="calendar__day calendar__item">JUE</div>
-                        <div class="calendar__day calendar__item">VIER</div>
-                        <div class="calendar__day calendar__item">SAB</div>
-                        <div class="calendar__day calendar__item">DOM</div>
+                    <div class="calendar__week container-fluid">
+                        <div class="calendar__day calendar__item d-none d-md-block">LUN</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">L</div>
+                        <div class="calendar__day calendar__item d-none d-md-block">MAR</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">M</div>
+                        <div class="calendar__day calendar__item d-none d-md-block">MIER</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">X</div>
+                        <div class="calendar__day calendar__item d-none d-md-block">JUE</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">J</div>
+                        <div class="calendar__day calendar__item d-none d-md-block">VIER</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">V</div>
+                        <div class="calendar__day calendar__item d-none d-md-block">SAB</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">S</div>
+                        <div class="calendar__day calendar__item d-none d-md-block">DOM</div>
+                        <div class="calendar__day calendar__item d-block d-md-none">D</div>
                     </div>
-
                     <div class="calendar__dates" id="dates"></div>
                 </div>
             <div class="d-flex justify-content-center">
@@ -34,9 +39,9 @@
                     RESERVAR TU CITA
                 </a>
             </div>
-            </div>
         </div>
-        <div class="col mt-5">
+    </div>
+    <div class="col mt-5">
             <div class="cardInfoAppoi">
                 <p>Deslumbra con tu uñas y cabello en Funny Nails & Hair mientras reservar tu cita
                     y disfrutas de:
@@ -45,8 +50,9 @@
                 <p class="listInfo"><img src="/icons/NOTIFICACIONES.svg" class="me-2">Resivirás recordatorios automáticos</p>
                 <p class="listInfo"><img src="/icons/DOCUMENTO.svg" class="me-2">Podrás confirmar y cancelar citas de forma rápida y sencilla.</p>
             </div>
-        </div>
     </div>
-    {{> footer}}
 </div>
 <script src="/scripts/citas.js"></script>
+</div>
+
+{{> footer}}
