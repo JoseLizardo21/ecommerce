@@ -14,11 +14,10 @@ router.post('/signup',isNotLogedIn, passport.authenticate('local.signup',{
 }));
 
 
-router.post('/signin', isNotLogedIn, (req, res, next)=>{
-    console.log(req.body)
+router.post('/signin', (req, res, next)=>{
     passport.authenticate('local.signin', {
-        successRedirect: '/profile',
-        failureRedirect: '/signin',
+        successRedirect: '/',
+        failureRedirect: '/',
         failureFlash: true   
     })(req, res, next);
 });
@@ -27,10 +26,10 @@ router.get('/profile', isLoggedIn, (req, res)=>{
     res.render('profile')
 })
 
-router.get('/logout',  isLoggedIn, function(req, res, next) {
+router.get('/logout', function(req, res, next) {
     req.logout(function(err) {
       if (err) { return next(err); }
-      res.redirect('/profile');
+      res.redirect('/');
     });
 });
 

@@ -9,6 +9,7 @@ const passport = require("passport")
 
 //initializatons
 const app = express();
+require('./lib/passport.js');
 
 //settings
 app.set("views", path.join(__dirname, "views"))
@@ -21,20 +22,22 @@ app.engine(".hbs", engine({
 app.set("view engine", ".hbs");
 
 //midlewars
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json());
-//app.use(morgan('dev'))
 app.use(session({
-    secret: 'akaakka',
+    secret: 'aaas4d',
     resave: false,
     saveUninitialized: false,
 }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
+//app.use(morgan('dev'))
 app.use(flash())
 app.use(passport.initialize());
 app.use(passport.session())
+
 //global varibles
 app.use((req, res, next)=>{
     app.locals.message = req.flash("message");
+    app.locals.user = req.user;
     next();
 }) 
 

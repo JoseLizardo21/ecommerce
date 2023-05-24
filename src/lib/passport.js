@@ -1,7 +1,5 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const pool = require('../database');
-const helpers = require('../lib/helpers');
 
 passport.use('local.signin', new LocalStrategy({
     usernameFiedl: 'username',
@@ -9,10 +7,11 @@ passport.use('local.signin', new LocalStrategy({
     passReqToCallback: true
 }, async(req, username, password, done)=>{
     const user = {
-        username: "Usuario",
+        username,
         id: 1
     }
-    if(username == "usuario"){
+    console.log(username)
+    if(username == "usuario@gmail.com"){
         if(password == "usuario"){
             done(null, user, req.flash("success", 'Bienvenido'));
         }else{
@@ -28,7 +27,11 @@ passport.use('local.signup', new LocalStrategy({
     passwordField: 'password',
     passReqToCallback: true
 }, async (req, username, password, done)=>{
-    const { fullname } = req.body;
+    const newUser = {
+        username,
+        password,
+    }
+    /* const { fullname } = req.body;
     const newUser = {
         username,
         password,
@@ -36,7 +39,7 @@ passport.use('local.signup', new LocalStrategy({
     };
     newUser.password = await helpers.encrypPassword(password);
     const result = await pool.query('INSERT INTO users SET ?', [newUser]);
-    newUser.id = result.insertId;
+    newUser.id = result.insertId; */
    return done(null, newUser);
 }));
 
@@ -45,5 +48,8 @@ passport.serializeUser((user, done)=>{
 });
 
 passport.deserializeUser(async(id, done)=>{
-    done(null, 0);
+    done(null, {
+        username: "usuario@gmail.com",
+        id: 1
+    });
 });
