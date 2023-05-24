@@ -1,0 +1,44 @@
+.btnCloseSignIn{
+    color: #42B8F3;
+    font-size: 24px;
+    font-weight: 500;
+}
+.titleCardSignIn{
+    color: #42B8F3;
+    font-size: 27px;
+    font-weight: 500;
+}
+.ctnInSignIn{
+    height: 45px;
+    background-color: #E9E9E9;
+}
+.iconsSignIn{
+    filter: invert(73%) sepia(66%) saturate(3089%) hue-rotate(170deg) brightness(99%) contrast(93%);
+    width: 30px;
+}
+.ctnInSignIn input{
+    border: 0;
+    background-color: #E9E9E9;
+    font-weight: 300;
+    font-size: 15px;
+    color: #1E1E1E;
+}
+.ctnInSignIn input:focus{
+    outline: none;
+}
+.ctnInSignIn input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #E9E9E9 inset;
+}
+.labelSignIn{
+    font-weight: 300;
+    font-size: 15px;
+}
+.btnIngresar{
+    background-color: #42B8F3;
+}
+.btnIngresar:hover{
+    background-color: #2d9bd2;
+}
+.linkRe{
+    color: #42B8F3;
+}

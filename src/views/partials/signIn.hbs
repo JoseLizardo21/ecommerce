@@ -1,31 +1,35 @@
 <div class="modal fade" id="modalSignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content container-fluid">
-            <div class="modal-header">
-                <h5 class="modal-title text-primary text-center" id="loginModalLabel">¡Qué bueno tenerte de vuelta!</h5>
-                <button type="button" class="btn-close text-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="d-flex justify-content-end">
+                <button class="px-3 py-2 border-0 bg-white btnCloseSignIn" data-bs-dismiss="modal" aria-label="Close">X</button>
             </div>
-            <div class="modal-body">
+            <div class="px-5">
+                <h5 class="modal-title text-center titleCardSignIn">¡Qué bueno tenerte de vuelta!</h5>
                 <form action="/signin" method="post">
-                    <div class="mb-3">
-                        <label for="emailL" class="form-label">Correo electrónico</label>
-                        <input type="email" name="username" class="form-control bg-light" id="emailL" placeholder="Ingresa tu correo electronico">
+                    <div class="mb-4 mt-4">
+                        <label for="emailL" class="form-label labelSignIn">Correo electrónico</label>
+                        <div class="position-relative ctnInSignIn d-flex align-items-center rounded ps-2">
+                            <img src="/icons/user.svg" class="iconsSignIn">
+                            <input type="email" name="username" class="h-100 flex-grow-1 rounded px-3" id="emailL" placeholder="Ingresa tu correo electronico">
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password"  name="password" class="form-control bg-light" id="password" placeholder="Ingresa tu contraseña">
+                    <div class="mb-4">
+                        <label for="passwordL" class="form-label labelSignIn">Contraseña</label>
+                        <div class="position-relative ctnInSignIn d-flex align-items-center rounded ps-2">
+                            <img src="/icons/lock.svg" class="iconsSignIn">
+                            <input type="password" name="password" class="h-100 flex-grow-1 rounded px-3" id="passwordL" placeholder="Ingresa tu contraseña">
+                        </div>
                     </div>
                     <div class="mb-3">
                         <a href="#" class="text-dark">Restablecer Contraseña</a>
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary btn-lg">Ingresar</button>
+                        <button class="btn fw-bold py-2 btnIngresar text-white">Ingresar</button>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
-                <p class="text-muted text-center">¿Aún no tienes una cuenta? <a href="#" class="text-primary">Regístrate</a></p>
-            </div>
+            <p class="text-muted text-center mt-5">¿Aún no tienes una cuenta? <a href="/signUp" class="linkRe">Regístrate</a></p>
         </div>
     </div>
 </div>
