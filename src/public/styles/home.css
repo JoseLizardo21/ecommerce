@@ -141,6 +141,9 @@
     }
 }
 @media(max-width: 767px){
+    .ctnImgManicure{
+        height: 350px;
+    }
     #ctnImg2Manicure{
         display: none;
     }
@@ -180,9 +183,25 @@
     }
 }
 @media(max-width: 530px){
+    .ctnImgManicure{
+        height: 320px;
+    }
     .ctnImDesP{
         width: 300px;
         height: 300px;
+    }
+    .ctnImDesS{
+        width: 150px;
+    }
+    .tamañoCardS{
+        width: 150px;
+    }
+}
+@media(max-width: 400px){
+    .ctnImDesP{
+        background-color: red;
+        width: 200px;
+        height: 200px;
     }
     .ctnImDesS{
         width: 150px;

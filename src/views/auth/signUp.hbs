@@ -1,64 +1,75 @@
 <div class="container-fluid mt-5">
-    <div class="row row-cols-1 row-cols-md-2 px-3 px-md-5">
-        <div class="col">
-            <h2 class="text-primary salon-title">Regístrate</h2>
-            <h5>Ingresa tus datos personales y disfruta de una experiencia de compra más rápida.</h5>
-            <form id="datosreg">
-                <div class="form-group">
-                    <label for="nombre" class="mb-2 my-4"><strong>Nombre:</strong></label>
-                    <input type="text" class="form-control col-sm-4" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    <form class="formSignUp" method="POST" action="/signupFirs">
+        <div class="row row-cols-1 row-cols-md-2 px-3 px-md-5 gy-5">
+            <div class="col">
+                <div class="ctnFormSignUp justify-content-sm-center">
+                    <h2 class="titleSignUp">Regístrate</h2>
+                    <p>Ingresa tus datos personales y disfruta de una experiencia de compra más rápida.</p>
+                        <div class="form-group my-4">
+                            <label for="nombre"><strong>Nombre</strong></label>
+                            <input type="text" class="form-control col-sm-4" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="apellidos"><strong>Apellidos</strong></label>
+                            <input type="text" class="form-control col-sm-6" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="tipo-documento"><strong>Tipo de documento</strong></label>
+                            <select class="form-control custom-select custom-select-angosto col-sm-6" id="tipo-documento" name="tipo-documento" required>
+                                <option value="dni">DNI</option>
+                                <option value="pasaporte">Pasaporte</option>
+                                <option value="carnet-extranjeria">Carnet de Extranjería</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="numero-documento"><strong>Número de documento</strong></label>
+                            <input type="text" class="form-control col-sm-6" id="numero-documento" name="numero-documento" placeholder="Ingresa tu número de documento" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="celular"><strong>Celular</strong></label>
+                            <input type="text" class="form-control col-sm-6" id="celular" name="celular" placeholder="Ingresa tu número de celular" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo"><strong>Correo electrónico</strong></label>
+                            <input type="email" class="form-control col-sm-6" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
                 </div>
-                <div class="form-group">
-                    <label for="apellidos" class="mb-2 my-3"><strong>Apellidos:</strong></label>
-                    <input type="text" class="form-control col-sm-6" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+            </div>
+            <div class="col">
+                <div>
+                    <div class="beneficios bg-light bg-lighter py-2 px-5 my-3">
+                        <h4 class="pe-0 pe-md-5">Descubre los beneficios de crear tu cuenta en Funny Nails & Hair:</h4>
+                        <ul class="mt-3 px-0">
+                            <li class="mb-2">
+                                <img src="/icons/smartphone.svg" class="iconsBeneficios">
+                                Recibir notificaciones en tiempo real de tu reserva de citas
+                            </li>
+                            <li class="mb-2">
+                                <img src="/icons/description.svg" class="iconsBeneficios">
+                                Recibir noticias y ofertas en tu correo electrónico
+                            </li>
+                            <li>
+                                <img src="/icons/markEmail.svg" class="iconsBeneficios">
+                                Imprimir tus boletas o facturas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="termCondSignUp my-5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
+                            <label class="form-check-label" for="acepto-terminos">Acepto los <a href="terminos-condiciones.html" target="_blank">términos y condiciones</a> de Funny Nails & Hair para recibir noticias y ofertas</label>
+                        </div>
+                        <div class="form-check my-2">
+                            <input class="form-check-input" type="checkbox" id="acepto-privacidad" name="acepto-privacidad" required>
+                            <label class="form-check-label" for="acepto-privacidad">Acepto la <a href="politica_privacidad.html" target="_blank">política de privacidad</a> de Funny Nails & Hair</label>
+                        </div>
+                        <div class="my-5 d-flex justify-content-center">
+                                <button type="submit" class="btnConSignUp py-1 px-3">Siguiente</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="tipo-documento" class="mb-2 my-3"><strong>Tipo de documento:</strong></label>
-                    <select class="form-control custom-select custom-select-angosto col-sm-6" id="tipo-documento" name="tipo-documento" required>
-                        <option value="dni">DNI</option>
-                        <option value="pasaporte">Pasaporte</option>
-                        <option value="carnet-extranjeria">Carnet de Extranjería</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="numero-documento" class="mb-2 my-3"><strong>Número de documento:</strong></label>
-                    <input type="text" class="form-control col-sm-6" id="numero-documento" name="numero-documento" placeholder="Ingresa tu número de documento" required>
-                </div>
-                <div class="form-group">
-                    <label for="celular" class="mb-2 my-3"><strong>Celular:</strong></label>
-                    <input type="text" class="form-control col-sm-6" id="celular" name="celular" placeholder="Ingresa tu número de celular" required>
-                </div>
-                <div class="form-group">
-                    <label for="correo" class="mb-2 my-3"><strong>Correo electrónico:</strong></label>
-                    <input type="email" class="form-control col-sm-6" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
-                </div>
-            </form>
         </div>
-        <div class="col">
-            <div class="beneficios bg-light bg-lighter p-2 my-3">
-                <h4 class="text-primary">Descubre los beneficios de crear tu cuenta en Funny Nails & Hair:</h4>
-                <ul>
-                    <li>Recibir notificaciones importantes</li>
-                    <li>Imprimir boletas y comprobantes</li>
-                    <li>Estar al tanto de las últimas noticias y novedades</li>
-                </ul>
-            </div>
-            <div class="terminos-condiciones my-5">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
-                    <label class="form-check-label" for="acepto-terminos">Acepto los <a href="terminos-condiciones.html">términos y condiciones</a> de Funny Nails & Hair para recibir noticias y ofertas</label>
-                </div>
-                <div class="form-check my-2">
-                    <input class="form-check-input" type="checkbox" id="acepto-privacidad" name="acepto-privacidad" required>
-                    <label class="form-check-label" for="acepto-privacidad">Acepto la <a href="politica_privacidad.html">política de privacidad</a> de Funny Nails & Hair</label>
-                </div>
-                <div class="my-5">
-                        <button type="button" class="btn btn-secondary">Volver</button>
-                        <button type="submit" class="btn btn-primary">Siguiente</button>
-
-                </div>
-            </div>
-    </div>
+    </form>
 </div>
 </div>
 {{> footer}}

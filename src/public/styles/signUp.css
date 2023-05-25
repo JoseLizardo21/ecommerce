@@ -1,0 +1,53 @@
+.titleSignUp{
+    color: #42B8F3;
+}
+.ctnFormSignUp{
+    width: 450px;
+}
+
+.titleSignUp + p{
+    font-weight: 300;
+    font-size: 15px;
+}
+.formSignUp input,.formSignUp select{
+    font-size: 15px;
+}
+.beneficios h4{
+    color: #42B8F3;
+    font-size: 20px;
+}
+.beneficios ul li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+.iconsBeneficios{
+    width: 23px;
+    filter: invert(68%) sepia(95%) saturate(1881%) hue-rotate(170deg) brightness(96%) contrast(98%);
+}
+.termCondSignUp{
+    color: #A5A5A5;
+}
+.termCondSignUp a{
+    text-decoration: none;
+    color: #42B8F3;
+}
+.btnConSignUp{
+    background-color: #42B8F3;
+    border: 0;
+    color: white;
+    border-radius: 20px;
+}
+
+@media(max-width: 1000px){
+    .ctnFormSignUp{
+        width: 300px;
+    }   
+}
+
+@media(max-width: 576px){
+    .ctnFormSignUp{
+        width: 100%;
+    }   
+}
+

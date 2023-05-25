@@ -7,6 +7,10 @@ const {isLoggedIn, isNotLogedIn} = require('../lib/auth');
 router.get('/signUp',isNotLogedIn, (req,res)=>{
     res.render('auth/signup');
 });
+router.post('/signupFirs', (req, res)=>{
+    console.log(req.body)
+    res.send("recibido")
+});
 router.post('/signup',isNotLogedIn, passport.authenticate('local.signup',{
         successRedirect: '/profile',
         failureRedirect: '/signup',
