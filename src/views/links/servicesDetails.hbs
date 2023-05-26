@@ -1,3 +1,97 @@
-<a href="/servicios/resumenCompra">
-    añadir al carrito
-</a>
+<style>
+    body {
+        background-color: #f1f5f8;
+    }
+
+    .container-fluid {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .add-to-cart-btn {
+        background-color: #fff;
+        color: #000;
+        border-color: #000;
+    }
+</style>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/images/imgPrueba.png" alt="producto" class="img-fluid product-image">
+        </div>
+        <div class="col-md-6">
+            <h1 class="text-primary">Manicure Clásica</h1>
+            <h2 class="text-primary">S/.29,90</h2>
+            <div class="quantity">
+                <h3>Cantidad:</h3>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-primary rounded-0" type="button" id="minus-btn">-</button>
+                    </div>
+                    <button class="btn btn-outline-primary rounded-0" type="button" id="quantity-btn">1</button>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary rounded-0" type="button" id="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-lg mt-3 add-to-cart-btn">Añadir al carrito</button>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-lg mt-3"><a href="/servicios/resumenCompra" class="text-light">Comprar Ahora</a></button>
+            </div>
+            <p class="mt-4">Detalles del Servicio:</p>
+            <ul>
+                <li>Tiempo aproximado: 1 hora</li>
+                <li>Una opción tradicional para mantener las uñas lindas</li>
+                <li>Válido para: uñas libres de sistemas, uñas libres de esmaltes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <h3 class="text-primary">También te puede interesar</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/imgPrueba.png" class="card-img-top" alt="Servicio 1">
+                <div class="card-body">
+                    <h5 class="card-title">Servicio 1</h5>
+                    <p class="card-text">Descripción del servicio 1</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/imgPrueba.png" class="card-img-top" alt="Servicio 2">
+                <div class="card-body">
+                    <h5 class="card-title">Servicio 2</h5>
+                    <p class="card-text">Descripción del servicio 2</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/imgPrueba.png" class="card-img-top" alt="Servicio 3">
+                <div class="card-body">
+                    <h5 class="card-title">Servicio 3</h5>
+                    <p class="card-text">Descripción del servicio 3</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer}}
