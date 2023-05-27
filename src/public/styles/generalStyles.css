@@ -1,5 +1,374 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+.text-primary {
+    color: #42B8F3;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 1px;
+}
+
+.ctnImgsPre {
+    position: relative;
+}
+
+.ctnImgManicure {
+    height: 550px;
+    filter: brightness(60%);
+}
+
+#ctnImg1Manicure {
+    background-image: url("/images/nailshome.png");
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+#ctnImg2Manicure {
+    background-image: url("/images/nailshome2.png");
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+.ctnPresen {
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ctnPresen > h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.ctnPresen > div:nth-child(2) {
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.ctnPresen > a {
+    background-color: #42B8F3;
+    color: white;
+    padding: 5px 40px;
+    text-decoration: none;
+}
+
+.ctnAboutMeHome {
+    width: 500px;
+}
+
+.ctnAboutMeHome > p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.ctnServicesHome {
+    margin-top: 30px;
+}
+
+.serName {
+    color: #656565;
+    font-weight: 100;
+}
+
+.ctnSusBol {
+    border-top: solid 1px #EEEEEE;
+    border-bottom: solid 1px #EEEEEE;
+    margin: 100px 0;
+}
+
+.btnMoreServices {
+    text-decoration: none;
+    background-color: #42B8F3;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 35px;
+}
+
+.cardSusBol > div:nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cardSusBol > div:nth-child(2) {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.cardSusBol input {
+    border: 0;
+    border-radius: 10px;
+    padding: 3px 20px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #F5F5F5;
+}
+
+.cardSusBol input:focus {
+    outline: none;
+}
+
+.btnEnvSus {
+    background-color: #42B8F3;
+    border: 0;
+    color: white;
+    font-weight: 600;
+    padding: 0 60px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.ctnImDesP {
+    width: 600px;
+    height: 600px;
+}
+
+.ctnImDesS {
+    width: 250px;
+}
+
+.tamañoCardS {
+    width: 250px;
+}
+
+@media(max-width: 1180px) {
+    .ctnImgManicure {
+        height: 450px;
+    }
+    .ctnImDesP {
+        width: 590px;
+        height: 590px;
+    }
+    .ctnImDesS {
+        width: 240px;
+    }
+    .tamañoCardS {
+        width: 240px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .ctnImgManicure {
+        height: 380px;
+    }
+    .ctnFormSignUp {
+        width: 300px;
+    }
+}
+
+@media(max-width: 767px) {
+    .ctnImgManicure {
+        height: 350px;
+    }
+    #ctnImg2Manicure {
+        display: none;
+    }
+    .ctnPresen > h1 {
+        font-size: 20px;
+    }
+    .ctnPresen > div:nth-child(2) {
+        font-size: 14px;
+    }
+    .ctnPresen {
+        font-size: 14px;
+    }
+    .ctnServicesHome {
+        margin-top: 60px;
+        font-size: 13px;
+    }
+    .cardSusBol {
+        padding: 0 30px;
+    }
+    .cardSusBol > div:nth-child(1) {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .btnEnvSus {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.titleCate {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@media(max-width: 630px) {
+    .ctnImDesP {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media(max-width: 530px) {
+    .ctnImgManicure {
+        height: 320px;
+    }
+    .ctnImDesP {
+        width: 300px;
+        height: 300px;
+    }
+    .ctnImDesS {
+        width: 150px;
+    }
+    .tamañoCardS {
+        width: 150px;
+    }
+}
+
+@media(max-width: 400px) {
+    .ctnImDesP {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+    }
+    .ctnImDesS {
+        width: 150px;
+    }
+    .tamañoCardS {
+        width: 150px;
+    }
+}
+
+.iconLogo {
+    width: 100px;
+}
+
+.btnCloseSignIn {
+    color: #42B8F3;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.titleCardSignIn {
+    color: #42B8F3;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.ctnInSignIn {
+    height: 45px;
+    background-color: #E9E9E9;
+}
+
+.iconsSignIn {
+    filter: invert(73%) sepia(66%) saturate(3089%) hue-rotate(170deg) brightness(99%) contrast(93%);
+    width: 30px;
+}
+
+.ctnInSignIn input {
+    border: 0;
+    background-color: #E9E9E9;
+    font-weight: 300;
+    font-size: 15px;
+    color: #1E1E1E;
+}
+
+.ctnInSignIn input:focus {
+    outline: none;
+}
+
+.ctnInSignIn input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #E9E9E9 inset;
+}
+
+.labelSignIn {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.btnIngresar {
+    background-color: #42B8F3;
+}
+
+.btnIngresar:hover {
+    background-color: #2d9bd2;
+}
+
+.linkRe {
+    color: #42B8F3;
+}
+
+.titleSignUp {
+    color: #42B8F3;
+}
+
+.ctnFormSignUp {
+    width: 450px;
+}
+
+.titleSignUp + p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.formSignUp input,
+.formSignUp select {
+    font-size: 15px;
+}
+
+.beneficios h4 {
+    color: #42B8F3;
+    font-size: 20px;
+}
+
+.beneficios ul li {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.iconsBeneficios {
+    width: 23px;
+    filter: invert(68%) sepia(95%) saturate(1881%) hue-rotate(170deg) brightness(96%) contrast(98%);
+}
+
+.termCondSignUp {
+    color: #A5A5A5;
+}
+
+.termCondSignUp a {
+    text-decoration: none;
+    color: #42B8F3;
+}
+
+.btnConSignUp {
+    background-color: #42B8F3;
+    border: 0;
+    color: white;
+    border-radius: 20px;
+}
+
+@media(max-width: 1000px) {
+    .ctnFormSignUp {
+        width: 300px;
+    }
+}
+
+@media(max-width: 576px) {
+    .ctnFormSignUp {
+        width: 100%;
+    }
+}
+/**/
+.custom-select {
+    color: #888;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+
+

@@ -1,0 +1,62 @@
+
+.btn {
+    border-radius: 20px;
+}
+
+.text-celeste {
+    color: #42B8F3;
+}
+
+.custom-link {
+    color: #42B8F3;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.card {
+    text-decoration: none;
+    color: #000;
+}
+
+.card:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#packs {
+    margin-top: 20px;
+}
+
+#filtros {
+    margin-top: 20px;
+}
+
+#filtros label,
+#filtros select {
+    margin-bottom: 10px;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.pagination .page-item .page-link {
+    color: #42B8F3;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item .page-link:hover {
+    color: #fff;
+    background-color: #42B8F3;
+    border-color: #42B8F3;
+}
