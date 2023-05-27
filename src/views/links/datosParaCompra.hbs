@@ -1,1 +1,106 @@
-AQUI VA LOS DATOS QUE DEBE INGRESAR EL USUARIO PARA COMPRAS
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-primary">Datos</h1>
+            <div class="p-4">
+                <div class="form-group mb-4">
+                    <label for="emailInput"><strong>Correo electrónico</strong></label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Correo electrónico">
+                </div>
+                <div class="form-group mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="newsletterCheck">
+                        <label class="form-check-label" for="newsletterCheck">
+                            Recibir noticias y ofertas en mi correo
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="form-group col-md-5">
+                        <label for="firstNameInput"><strong>Nombres</strong></label>
+                        <input type="text" class="form-control" id="firstNameInput" placeholder="Nombres">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="lastNameInput"><strong>Apellidos</strong></label>
+                        <input type="text" class="form-control" id="lastNameInput" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <label for="departamento" class="mb-2"><strong>Dpt.:</strong></label>
+                        <select class="form-control" id="departamento" name="departamento">
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="provincia" class="mb-2"><strong>Prov.:</strong></label>
+                        <select class="form-control" id="provincia" name="provincia">
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="distrito" class="mb-2"><strong>Distrito:</strong></label>
+                        <select class="form-control" id="distrito" name="distrito">
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="saveInfoCheck">
+                        <label class="form-check-label" for="saveInfoCheck">
+                            Guardar información para la próxima vez
+                        </label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-light" type="button">Volver al Carrito</button>
+                    <button class="btnConSignUp py-1 px-3" type="button">Continuar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-light p-4" >
+                <h2 class="text-primary mb-4">Servicios</h2>
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="mr-3">
+                                <img src="/images/imgPrueba.png" alt="Servicio 1" class="img-fluid" style="max-width: 33%;">
+                            </div>
+                            <div>
+                                <h5 class="text-primary mb-1">Título del Servicio 1</h5>
+                                <p class="mb-1">Cantidad: 1</p>
+                                <p class="mb-1">Dirección: Dirección del Servicio 1</p>
+                                <p class="mb-0">Precio: $100.00</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="mr-3">
+                                <img src="/images/imgPrueba.png" alt="Servicio 2" class="img-fluid" style="max-width: 33%;">
+                            </div>
+                            <div>
+                                <h5 class="text-primary mb-1">Título del Servicio 2</h5>
+                                <p class="mb-1">Cantidad: 2</p>
+                                <p class="mb-1">Dirección: Dirección del Servicio 2</p>
+                                <p class="mb-0">Precio: $150.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="font-weight-bold">Total Parcial: $250.00</p>
+                        <p class="font-weight-bold text-primary">Total con Impuestos: $287.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5">{{> footer}}</div>

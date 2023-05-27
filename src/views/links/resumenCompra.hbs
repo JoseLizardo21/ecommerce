@@ -1,3 +1,106 @@
-<a href="/servicios/datosCompra">
-    continuar con compra
-</a>
+<div class="container-fluid">
+    <div class="row px-3 mt-5">
+        <div class="col-md-6 col-sm-12  ">
+            <h1 class="text-center mt-3 text-primary">Carrito de Compras</h1>
+            <div class="card mb-3 con bg-light">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center" style="height: 100%;">
+                            <img src="/images/imgPrueba.png" alt="Producto 1" class="img-fluid img-thumbnail" style="max-width: 33%;">
+                            <div class="ml-3">
+                                <h2 class="text-primary">Producto 1</h2>
+                                <h3 class="text-primary">$19.99</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-end">
+                                <div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-primary rounded-0" type="button" id="minus-btn">-</button>
+                                        </div>
+                                        <button class="btn btn-outline-primary rounded-0" type="button" id="quantity-btn">1</button>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary rounded-0" type="button" id="plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="text-right mt-2">
+                                        <button class="btn btn-primary" type="button">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 con bg-light">
+                <div class="row no-gutters">
+                    <div class="col-md-6 ">
+                        <div class="d-flex align-items-center" style="height: 100%;">
+                            <img src="/images/imgPrueba.png" alt="Producto 2" class="img-fluid img-thumbnail" style="max-width: 33%;">
+                            <div class="ml-3">
+                                <h2 class="text-primary">Producto 2</h2>
+                                <h3 class="text-primary">$24.99</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-end">
+                                <div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-primary rounded-0" type="button" id="minus-btn">-</button>
+                                        </div>
+                                        <button class="btn btn-outline-primary rounded-0" type="button" id="quantity-btn">1</button>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary rounded-0" type="button" id="plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="text-right mt-2">
+                                        <button class="btn btn-primary" type="button">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h2 class="text-center text-primary">Resumen de Compra</h2>
+            <div class="card bg-light">
+                <div class="card-body ">
+                    <table class="table ">
+                        <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Producto 1</td>
+                            <td>2</td>
+                            <td>$39.98</td>
+                        </tr>
+                        <tr>
+                            <td>Producto 2</td>
+                            <td>1</td>
+                            <td>$24.99</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="text-center text-primary">Total a Pagar: $64.97</h3>
+                    <div class="text-center">
+                        <a href="/servicios/datosCompra" class="btn btn-primary mt-3">Continuar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-5">{{> footer}}</div>

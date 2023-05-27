@@ -80,7 +80,6 @@
 #dateSelectCita:focus{
     outline: none;
 }
-/*Parte del calendario donde se mostraran las citas*/
 
 .inptsSelectMuCita{
     display: none;
