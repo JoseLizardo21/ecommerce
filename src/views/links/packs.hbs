@@ -21,36 +21,43 @@
         </div>
     </div>
     <div class="row" id="filtros">
-        <div class="col">
-            <label for="disponibilidad" class="custom-select">Filtrar por:</label>
-            <select id="disponibilidad" class="custom-select">
-                <option disabled selected class="visually-hidden">Disponibilidad </option>
-                <option value="todos">Todos</option>
-                <option value="disponible">Disponible</option>
-                <option value="agotado">Agotado</option>
-            </select>
+        <div class="col-6">
+            <div class="row">
+                <div class="col">
+                    <label for="disponibilidad" class="custom-select">Filtrar por:</label>
+                    <select id="disponibilidad" class="custom-select">
+                        <option disabled selected class="visually-hidden">Disponibilidad</option>
+                        <option value="todos">Todos</option>
+                        <option value="disponible">Disponible</option>
+                        <option value="agotado">Agotado</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select id="precio" class="custom-select">
+                        <option disabled selected class="visually-hidden">Precios</option>
+                        <option value="todos">Todos</option>
+                        <option value="bajo">Menor precio</option>
+                        <option value="alto">Mayor precio</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <select id="precio" class="custom-select">
-                <option disabled selected class="visually-hidden">Precios</option>
-                <option value="todos">Todos</option>
-                <option value="bajo">Menor precio</option>
-                <option value="alto">Mayor precio</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="ordenar" class="custom-select">Ordenar por:</label>
-            <select id="ordenar" class="custom-select">
-                <option value="destacados">Destacado</option>
-                <option value="nombre">Nombre</option>
-                <option value="precio">Precio</option>
-            </select>
-        </div>
-        <div class="col">
-            <p class="custom-select">X productos</p>
+        <div class="col-6 d-flex justify-content-end">
+            <div class="row">
+                <div class="col-8">
+                    <label for="ordenar" class="custom-select">Ordenar por:</label>
+                    <select id="ordenar" class="custom-select">
+                        <option value="destacados">Destacado</option>
+                        <option value="nombre">Nombre</option>
+                        <option value="precio">Precio</option>
+                    </select>
+                </div>
+                <div class="col-1">
+                    <p class="custom-select " >X productos</p>
+                </div>
+            </div>
         </div>
     </div>
-
     <div id="services-container" class="row row-cols-2 row-cols-lg-4 g-3 g-lg-5 mt-1">
         <div class="col">
             <div class="card rounded-0 border-0">

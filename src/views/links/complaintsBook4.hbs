@@ -1,11 +1,11 @@
 <div class="container-fluid" style="height:1000px;">
     <div class="row" style="height:1000px;">
-        <div class="col-12 col-md-6 left-section d-flex flex-column bg-primary">
+        <div class="col-12 col-md-6 left-section text-white" style="background-color: #42B8F3;">
             <h2 class="text-center mt-5 mb-5">Estamos aquí para ayudarte</h2>
             <p class="text-center mb-0 pb-2 px-5">Ayúdanos a entender tu caso, completa los siguientes datos del libro de reclamaciones</p>
         </div>
         <div class="col-12 col-md-6 right-section">
-                    <h2 class="text-center text-primary mt-5">Completa los detalles</h2>
+                    <h2 class="text-center mt-5" style="color: #42B8F3;">Completa los detalles</h2>
                     <form id="detalles">
                         <div class="form-group">
                             <label for="identificacion" class="mb-2 my-4"><strong>Identificación del bien contratado:</strong></label>
@@ -38,11 +38,11 @@
                     </form>
             <div class="d-flex justify-content-between mt-5">
                 <button type="button" class="btn btn-light" onclick="window.location.href = '/libroReclamaciones/datosPersonales';">Volver</button>
-                <button type="button" class="btn btn-primary">Siguiente</button>
+                <button type="button" class="btnConSignUp py-1 px-3">Siguiente</button>
             </div>
             </div>
-
-        {{> footer}}
         </div>
 </div>
+
+{{> footer}}
    
