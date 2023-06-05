@@ -1,40 +1,44 @@
 <div class="container-fluid " style="height:1000px;">
-    <div class="row" style="height:800px;">
+    <div class="row" style="height:1015px;">
         <div class="col-12 col-md-6 left-section text-white" style="background-color: #42B8F3;">
             <h2 class="text-center mt-5 mb-5">Estamos aquí para ayudarte</h2>
             <p class="text-center mb-0 pb-2 px-5">Ayúdanos a entender tu caso, completa los siguientes datos del libro de reclamaciones</p>
         </div>
-        <div class="col-12 col-md-6 right-section">
+        <div class="col-12 col-md-6 px-md-5 right-section">
             <h2 class="text-center mt-5" style="color: #42B8F3;">Completa tus datos personales</h2>
             <form id="datosper">
                 <div class="form-group">
-                    <label for="nombre" class="mb-2 my-4"><strong>Nombre:</strong></label>
-                    <input type="text" class="form-control col-sm-4" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    <input type="text" class="form-control col-sm-4 mt-4" style="height: 4rem;" id="nombre" name="nombre" placeholder="Nombres" required>
                 </div>
                 <div class="form-group">
-                    <label for="apellidos" class="mb-2 my-3"><strong>Apellidos:</strong></label>
-                    <input type="text" class="form-control col-sm-6" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+                    <input type="text" class="form-control col-sm-6 mt-2" style="height: 4rem;" id="apellidos" name="apellidos" placeholder="Apellidos" required>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <label for="departamento" class="mb-2 my-3"><strong>Dpt.:</strong></label>
-                        <select class="form-control" id="departamento" name="departamento">
+                <div class="form-group">
+                    <input type="text" class="form-control col-sm-6 mt-2" style="height: 4rem;" id="celular" name="celular" placeholder="Celular" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control col-sm-6 mt-2" style="height: 4rem;" id="correo" name="correo" placeholder="Correo electrónico" required>
+                </div>  
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <select class="form-control" style="height: 4rem;" id="departamento" name="departamento">
+                            <option disabled selected class="visually-hidden">Dpt.</option>
                             <option value="opcion1">Opción 1</option>
                             <option value="opcion2">Opción 2</option>
                             <option value="opcion3">Opción 3</option>
                         </select>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label for="provincia" class="mb-2 my-3"><strong>Prov.:</strong></label>
-                        <select class="form-control" id="provincia" name="provincia">
+                        <select class="form-control" style="height: 4rem;" id="provincia" name="provincia">
+                            <option disabled selected class="visually-hidden">Prov.</option>
                             <option value="opcion1">Opción 1</option>
                             <option value="opcion2">Opción 2</option>
                             <option value="opcion3">Opción 3</option>
                         </select>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label for="distrito" class="mb-2 my-3"><strong>Distrito:</strong></label>
-                        <select class="form-control" id="distrito" name="distrito">
+                        <select class="form-control" style="height: 4rem;" id="distrito" name="distrito">
+                            <option disabled selected class="visually-hidden">Distrito</option>
                             <option value="opcion1">Opción 1</option>
                             <option value="opcion2">Opción 2</option>
                             <option value="opcion3">Opción 3</option>
@@ -42,14 +46,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="direccion" class="mb-2 my-3"><strong>Dirección:</strong></label>
-                    <input type="text" class="form-control col-sm-6" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
+                    <input type="text" class="form-control col-sm-6 mt-2" style="height: 4rem;" id="direccion" name="direccion" placeholder="Dirección" required>
                 </div>
                 <div class="form-group mt-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="aceptado" name="aceptado" required>
                         <label class="form-check-label" for="aceptado">
-                            He leído y aceptado los <a href="#" target="_blank">términos de privacidad</a>.
+                            He leído y aceptado los <a href="#" target="_blank" style="color: #42B8F3;">términos de privacidad</a>.
                         </label>
                     </div>
                 </div>
@@ -60,6 +63,6 @@
             </div>
         </div>
         </div>
-    {{> footer}}
 </div>
+{{> footer}}
 
